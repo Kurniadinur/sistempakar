@@ -1,0 +1,357 @@
+/* Global styles */
+body {
+  font-family: helvetica, sans-serif;
+  color: #333;       
+  margin: 0;   
+  padding: 0;     
+  height: 100%;           
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin-top: 0;
+  padding: 0;
+  width: 12%;
+  background-color: blue;
+  font-size: 15px;
+  height: 100%;
+  position: fixed;
+  padding-top:20px;
+  top: 0;
+}
+
+li{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+li a {
+display: block;
+color: white;
+text-align:left;
+text-decoration:none;
+padding: 13px;
+margin-left: 10px;
+margin-right: 10px;
+border-top: 1px solid white;
+}
+
+li a:hover {
+  background-color: gray;
+  text-decoration: none;
+}
+
+
+.footer-1{
+    left: 15%;
+    bottom: 0;
+    width: 82%;
+    height: 50px;
+    background-color:white;
+    color:black;  
+    text-align: center;
+    border-top: #333 1px solid;
+    position: fixed;
+}
+
+.footer-2{
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color:blue;
+  color:white;
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+  margin-top: 200px;
+}
+
+.atas{
+  position: relative;
+  left: 10%;
+  width: 90%;
+  padding-right: 20px;
+  padding-top: 30px;
+  height: 80px;
+  border: #333;
+  box-shadow:2px 2px 6px#333;
+  text-align: center;
+}
+
+.box-judul{
+  position: relative;
+  height: 80%;
+  width: 50%;
+  top: 10px;
+  left: 180px;
+  background-color: white;
+  color: gray;
+}
+
+/* Halaman Dashboar.php */
+
+.box-welcome{
+  position: relative;
+  height: 120px;
+  width: 85%;
+  top: 20px;
+  left: 185px;
+  background-color:white;
+  border: 1px solid black;
+  border-left: blue 5px solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px#333;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  color: grey;
+
+}
+
+.box-jml-gejala{
+  top: 40px;
+  left: 210px;
+  height: 100px;
+  width: 25%;
+  background-color: white;
+  position: relative;
+  border: #333 solid 1px;
+  border-left: red 5px solid;
+  border-radius: 10px;
+  color: grey;
+  padding-left: 20px;
+  padding-top: 10px;
+  box-shadow:2px 2px 6px#333;
+  
+}
+
+.box-jml-penyakit{
+  top: 310px;
+  left: 580px;
+  height: 100px;
+  width: 25%;
+  position: absolute;
+  border: #333 solid 1px;
+  border-left:blueviolet 5px solid;
+  border-radius: 10px;
+  color: grey;
+  padding-left: 20px;
+  padding-top: 10px;
+  box-shadow:2px 2px 6px#333;
+}
+
+.box-jml-basis{
+  top: 310px;
+  left: 950px;
+  height: 100px;
+  width: 25%;
+  position: absolute;
+  border: #333 solid 1px;
+  border-left: yellow 5px solid;
+  border-radius: 10px;
+  color: grey;
+  padding-left: 20px;
+  padding-top: 10px;
+  box-shadow:2px 2px 6px#333;
+}
+
+/* Halaman Gejala.php */
+
+.box-judul-gejala{
+  position: relative;
+  height: 80%;
+  width: 80%;
+  top: 10px;
+  left: 180px;
+  background-color: white;
+  color: gray;
+}
+
+
+.box-tabel-gejala {
+  position: relative;
+  width: 83.5%;
+  top: 20px;
+  left: 180px;
+  background-color:white;
+  border: 1px solid;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px#333;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 70px;
+  color: black;
+} 
+
+table,th,td {
+  border: 1px solid black;
+  margin-left: 25px;
+  margin-top: 60px;
+  margin-right: 25px;
+}
+
+/*Button Tambah*/
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top:15px;
+  right: 50px;
+  width: 120px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none; 
+  position: relative;   
+  bottom:0px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 70%;
+}
+
+/* Add styles to the form container */
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+  bottom: 0px;
+  position: relative;
+}
+
+.form-container textarea {
+  width: 100%;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: hsl(0, 0%, 95%);
+  padding: 15px;
+  height: 100px;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Full-width input fields */
+.form-container input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  
+}
+
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: blue;
+  color: white;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+.button-edit {
+  background-color: blue;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 15px;
+  width: 120px;
+  right: 175px;
+}
+
+.form-popup-edit {
+  display: none;
+  position: relative;
+  top: 5%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 70%;
+}
+
+
+/* Set a style for the submit/login button */
+.form-container-1 {
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.form-container-1 .btn{
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0px;
+  right: 100px;
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container-1 .cancel{
+  background-color: blue;
+  color: white;
+  bottom: 0px;
+  position: absolute;
+  right: 15px;
+}
+
+/* Add some hover effects to buttons */
+.form-container-1 .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.bt1{
+  background-color: white;
+  color:blue;
+  border: 1px solid blue;
+  cursor: pointer;
+  width: 20%;
+  height: 30px;
+  opacity: 0.8;
+  border-radius: 5px;
+
+}
