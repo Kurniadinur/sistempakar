@@ -3,6 +3,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
         <title>Konsultasi SISPAG Gizi Balita</title>
     </head>
     <body>
@@ -19,22 +22,24 @@
             </div>
         </div>
         <div class="box-tabel-konsul">  
-            <h1>SILAHKAN PILIH GEJALA ANAK ANDA</h1>
-            <table>
-                    <?php
+            <h1 style="text-align: center;">SILAHKAN PILIH GEJALA ANAK ANDA</h1>
+            <form action="hasilkonsul.php" method="post">
+                <table>
+            <?php
                     include "koneksi.php";
                     $query = mysqli_query($conn,"select * from gejala");
                     
-                    while($data= mysqli_fetch_array($query)){ 
-                            echo"<tr>";
-                                echo"<td style='width: 95%; padding:4px;'>$data[nama_gejala]</td>";
-                                echo"<td style='width: 5%; text-align:center;'><input type='checkbox' value='$data[id_gejala]' name='$data[nama_gejala]'></td>";
-                            echo"</tr>";
+                    while($data = mysqli_fetch_array($query)){ 
+                        echo "<tr>";
+                                echo"<td style='padding:5px'>$data[nama_gejala]</td>";
+                                echo"<td style='padding:5px; padding-top:2px;'><input style='float:right' type='checkbox' value='$data[id_gejala]' name='gejala[]'></td>";
+                        echo "</tr>";
                     }
-                    ?>         
-                    
-            </table>
-            <button class="button-input">
+                    ?>  
+                </table>     
+            <button class="button-input" type="submit">  
+            </form>
+            
                 Input
             </button>
         </div>

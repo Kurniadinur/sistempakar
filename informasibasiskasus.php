@@ -109,7 +109,7 @@
 
                     ?>
             </table>
-
+</div>
     <div class="footer-2">
         <p>Author: Dela</p>
     </div>
