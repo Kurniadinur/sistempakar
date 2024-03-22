@@ -13,7 +13,7 @@
     #Edit Gejala
     if ($_POST['gejala_baru']!=null){
     $gejala_baru= $_POST['gejala_baru'];
-    $id_gejala= $_POST['id_gejala'];
+    $id_gejala= $_POST['id_gejala']; 
     $update = mysqli_query($conn,"UPDATE gejala SET nama_gejala= '$gejala_baru' WHERE id_gejala=$id_gejala");
     echo '<script type ="text/JavaScript">window.location.href="gejala.php";</script>';
     }else{
