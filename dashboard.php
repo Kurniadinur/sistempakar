@@ -50,7 +50,7 @@
     ?>
         <script src="'main.js" ></script>
     <div class="footer-1">
-        <p>Author: Dela</p>
+        <p>Author: Kurniadinur</p>
     </div>
     </body>
 

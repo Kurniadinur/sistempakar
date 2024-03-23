@@ -111,7 +111,7 @@
             </table>
 </div>
     <div class="footer-2">
-        <p>Author: Dela</p>
+        <p>Author: Kurniadinur</p>
     </div>
     </body>
 </html>

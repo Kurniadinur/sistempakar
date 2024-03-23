@@ -39,7 +39,7 @@ border-top: 1px solid white;
 }
 
 li a:hover {
-  background-color: gray;
+  background-color: black;
   text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ li a:hover {
   text-align: center;
   padding-top: 20px;
   position: relative;
-  margin-top: 200px;
+  margin-top: 360px;
 }
 
 .atas{
@@ -184,8 +184,8 @@ li a:hover {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 70px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
   color: black;
 } 
 
@@ -354,4 +354,59 @@ table,th,td {
   opacity: 0.8;
   border-radius: 5px;
 
+}
+
+.box-tabel-hasil {
+  position: relative;
+  width: 94%;
+  top: 150px;
+  left: 3%;
+  background-color:white;
+  border: 1px solid;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px#333;
+  color: black;
+  padding-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.box-tabel-hasil table {
+  position: relative;
+  width: 90%;
+  left: 20px;
+}
+
+.box-tabel-hasil td {
+  padding: 10px;
+}
+
+.box-atas-hasil{
+  top: 80px;
+  width: 94%;
+  height: 100px;
+  left: 3%;
+  position: absolute;
+  background-color:white;
+  border: 1px solid;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px#333;
+  color: black;
+  padding-left: 20px;
+  padding-top: 12px;
+
+}
+
+.button-kembali{
+  position: relative;
+  top: -40px;
+  float: right;
+  background-color: blue;
+  color: white;
+  margin-right: 40px;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 4px;
 }
