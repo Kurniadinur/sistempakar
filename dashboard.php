@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if($_SESSION['username']==null and $_SESSION['password']==null){
+        echo '<script type ="text/JavaScript"> alert("Kamu belum login"); window.location.href="login.php";</script>'; 
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,11 +16,11 @@
         <title> Admin SISPAGB</title>
     </head>
     <body >
-    <div class="atas"><a href="login.php"><i class="fa fa-sign-out fa-2x"  style="float: right;"></i></a></div>
+    <div class="atas"><a href="logout.php"><i class="fa fa-sign-out fa-2x"  style="float: right;"></i></a></div>
     <ul>
             <li style="height: 80px; border:none"><b href="dashboard.php" style="height: 70px; color:white;">SISTEM PAKAR FUZZY DAN CBR</b></li>
             <li><a href="dashboard.php"><i class="fa fa-home"></i> Beranda</a></li>
-            <li><a href="gejala.php"> <i class="far fa-clipboard"></i> Gejala</a></li>
+            <li><a href="gejala.php"> <i class="fa fa-hospital-o"></i> Gejala</a></li>
             <li><a href="penyakit.php"><i class="fa fa-stethoscope"></i> Penyakit</a></li>
             <li><a href="basiskasus.php"><i class="fa fa-plus-square"></i> Basis Kasus</a></li>
             <li><a href="konsultasiadmin.php"><i class="fa fa-user-md"></i> Konsultasi</a></li>
