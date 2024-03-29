@@ -53,7 +53,7 @@
             </table>
     </div>
     <div class="footer-2">
-        <p>Author: Kurniadinur</p>
+        <p>Author: Dela</p>
     </div>
     </body>
 </html>

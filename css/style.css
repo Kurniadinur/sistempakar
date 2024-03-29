@@ -2,30 +2,35 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;      
-  background-image: url(image/backround.jpg);   
+  background-color: violet;
+  background-image: url(image/bgg.png);    
+  background-size:  100%;
   background-repeat: no-repeat;    
   background-position-y: 46px; 
   margin: 0;     
-  padding: 0; 
-  height: 100%;                
+  padding: 0;      
+  height: 100%;   
+  
+  
 }
 
 .box-welcome{
   position: relative;
-  width: 520px;
+  width: 550px;
   height: 180px;
-  color:white;
+  color:black;
   padding: 2%;
   text-align: left;
-  font-family: Monaco;
+  font-family:"Allerta Stencil", Sans-serif;
   top:50px;
+  margin-bottom: 50px;
 
 }
 
 ul{
   list-style-type: none;
   overflow: hidden;
-  background-color:rgb(70, 70, 219);
+  background-image:linear-gradient(white, black 250%);
   border: #111;
   position: relative;
   margin: 0;
@@ -33,18 +38,22 @@ ul{
 
 li {
   float: right;
+  margin: 5px;
+  margin-bottom: 1px;
+  border: #111 solid 0.5px;
+  border-radius: 5px;
 }
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
-  padding: 14px;
+  padding: 10px;
   text-decoration: none;
 }
 
 li a.active {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.116);
   color: white;
 }
 
@@ -65,15 +74,18 @@ li b {
 }
 
 .box-menu{
-  top: 10%;
+  position: relative;
+  top: 25%x;
   left: 25%;
   width: 50%;
   height: 320px;
-  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
   background-color:white;
   box-shadow: 3px 3px 3px 3px black;
   border-radius: 10px;
   padding-top: 0.5%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .box-image{
@@ -82,6 +94,7 @@ li b {
   margin-left: 3%;
   float:left;
 }
+
 .box-image img{
   height: 40%;
   width: 40%;
@@ -89,7 +102,7 @@ li b {
 }
 
 .box-sispar{
-  top: 12%;
+  top: 20%;
   left: 25%;
   width: 50%;
   height: 320px;
@@ -114,11 +127,13 @@ li b {
   bottom: 0;
   width: 100%;
   height: 50px;
-  background-color:blue;
-  color:white;
+  background-image:linear-gradient(white, black 250%);
+  color:black;
   text-align: center;
   border-top: #333 1px solid;
   position: relative;
+  padding-top: 15px;
+  margin-top: 100px;
 }
 
 .box-tabel-konsul{
@@ -177,19 +192,18 @@ button{
 
 
 
-
 .box-tabel-informasi{
   top: 4%;
-  left: 5%;
-  width: 90%;
+  left: 9%;
+  width: 80%;
   position: relative;
   background-color:white;
   border: 1px solid;
-  padding-top: 0;
-  padding-bottom: 50px;
-  margin-bottom: 60px;
+  padding: 20px;
+  padding-top: 20;
+  margin-bottom: 30px;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px black;
+  box-shadow: 1px 1px 1px 1px black;
 }
 
 .box-tabel-informasi table,th,td{
@@ -199,3 +213,18 @@ button{
   margin-right: 25px;
 }
 
+.button-kembali{
+  position: relative;
+  top: 15%;
+  right: 100px;
+  float: right;
+  background-color: blue;
+  color: white;
+  margin-right: 40px;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 4px;
+}

@@ -49,8 +49,8 @@
     echo"<div class='box-jml-basis'><h4>Data Basis</h4><h4 style='color:black'>$o</h4></div>";
     ?>
         <script src="'main.js" ></script>
-    <div class="footer-1">
-        <p>Author: Kurniadinur</p>
+    <div class="footer-2">
+        <p>Author: Dela</p>
     </div>
     </body>
 

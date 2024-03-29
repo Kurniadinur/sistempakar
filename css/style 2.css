@@ -43,32 +43,37 @@ body{
 ul{
   list-style-type: none;
   overflow: hidden;
-  background-color:rgb(70, 70, 219);
+  background-image:linear-gradient(white, black 200%);
   border: #111;
   position: relative;
   margin: 0;
-
 }
 
 li {
   float: right;
+  margin: 5px;
+  margin-bottom: 1px;
+  border: #111 solid 0.5px;
+  border-radius: 5px;
 }
 
 li a {
-display: block;
-color: white;
-text-align: center;
-padding: 14px;
-text-decoration: none;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
 }
 
 li a.active {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.116);
   color: white;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #111111;
+  color: white;
+  text-decoration: none;
 }
 
 li b {
@@ -88,8 +93,11 @@ footer{
   bottom: 0;
   width: 100%;
   height: 50px;
-  background-color: blue;
   color: white;
   text-align: center;
+  padding-top: 15px;
+  background-image:linear-gradient(white, black 250%);
+  color: #111;
+  border-top: #111 solid 1px;
 }
 

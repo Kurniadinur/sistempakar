@@ -11,7 +11,7 @@
         <title>Basis Kasus</title>
 
     </head>
-    <body>
+    <body style="background-color: rgb(20,184,173);">
     <h2 style="padding-left: 40px; color:gray;"> Hasil Analisa dengan metode Fuzzy dan CBR</h2>
     <a style="text-decoration:none" class="button-kembali" href="konsultasi.php"><i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp;Kembali</a>
     
@@ -82,7 +82,7 @@
     
 
     <div class="footer-2">
-    <p>Author: Kurniadinur</p>
+    <p>Author: Dela</p>
     </div>
 
     </body>
