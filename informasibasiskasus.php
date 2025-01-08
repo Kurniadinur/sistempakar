@@ -17,7 +17,7 @@
             <li><a href="gejala.php"> <i class="far fa-clipboard"></i> Gejala</a></li>
             <li><a href="penyakit.php"><i class="fa fa-stethoscope"></i> Penyakit</a></li>
             <li><a href="basiskasus.php"><i class="fa fa-plus-square"></i> Basis Kasus</a></li>
-            <li><a href="konsultasi.php"><i class="fa fa-user-md"></i> Konsultasi</a></li>
+            <li><a href="konsultasiadmin.php"><i class="fa fa-user-md"></i> Konsultasi</a></li>
     </ul>
     <?php
     include "koneksi.php";
@@ -111,7 +111,7 @@
             </table>
 </div>
     <div class="footer-2">
-        <p>Author: Dela</p>
+        <p>Author: Dela Fitria</p>
     </div>
     </body>
 </html>

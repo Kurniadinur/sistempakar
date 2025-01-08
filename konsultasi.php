@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
 
@@ -18,8 +20,8 @@
             <li style="float:left; border:none; "><b href="index.php" style="color:black;">SISPAPG</b></li>
         </ul>
         <div class="box-welcome">
-            <h1>HALAMAN KONSULTASI</h1>
-            <p style="font-size: 12px;">SILAHKAN PILIH GEJALA YANG ANAK ANDA ALAMI DAN SISPAPG AKAN MEMBERIKAN DIAGNOSA TERHADAP PENYAKIT ANAK ANDA</p>
+            <h1 style="font-size: 35px; font-family: 'Montserrat';">HALAMAN KONSULTASI</h1>
+            <p style="font-size: 15px;  font-family: 'Kanit'; ">SILAHKAN PILIH GEJALA YANG ANAK ANDA ALAMI DAN SISPAPG AKAN MEMBERIKAN DIAGNOSA TERHADAP PENYAKIT ANAK ANDA</p>
             </div>
         </div>
         <div class="box-tabel-konsul">  
@@ -47,7 +49,7 @@
 
         <script src="'main.js" ></script>
     <div class="footer-2">
-        <p>Author: Dela</p>
+        <p>Author: Dela Fitria</p>
     </div>
     </body>
     

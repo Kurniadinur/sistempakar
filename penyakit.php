@@ -29,7 +29,7 @@
     <div class="box-tabel-gejala">
     <button class="open-button" onclick='openForm()' style="float: right;"> <i class="fa fa-plus" aria-hidden="true"></i> Tambah &nbsp</button>
     <div class="form-popup" id="myForm">
-        <form action="tambah_edit_penyakit.php" class="form-container" method="post">
+        <form action="tambah_edit_penyakit.php" class="form-container" method="post" enctype="multipart/form-data">
             <label for="penyakit"><b>Penyakit</b></label>
             <input type="text" placeholder="Masukkan nama penyakit" name="penyakit" required>
 
@@ -38,13 +38,19 @@
 
             <label for="penyakit"><b>Solusi</b></label>
             <textarea placeholder="Masukkan Solusi penyakit" name="solusi" required></textarea>
+
+            <label for="NamaFile"><b>Pilih Gambar Penyakit</b></label>
+            <input type="file" name="NamaFile"><br><br>
+
+            
             <button type="submit" class="btn">Input</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
     </div>    
     <button class="button-edit" onclick='bukaForm()'><i class="fa fa-edit" aria-hidden="true"></i>&nbsp;Edit</button>
+    
     <div class="form-popup-edit" id="editForm">
-        <form action="tambah_edit_penyakit.php" class="form-container" method="post">
+        <form action="tambah_edit_penyakit.php" class="form-container" method="post" enctype="multipart/form-data">
             <label for="id_penyakit"><b>Edit penyakit</b></label><br>
             
             <select class="form-control form-control-lg" aria-label="Default select example" name="id_penyakit">
@@ -61,6 +67,10 @@
             <textarea type='text' placeholder='Edit keterangan' name='keterangan_baru'></textarea>
             <label for="solusi_baru"><b>Solusi</b></label>
             <textarea type='text' placeholder='Edit solusi' name='solusi_baru'></textarea>
+
+            <label for="EditFile"><b>Edit Gambar Penyakit</b></label>
+            <input type="file" name="EditFile"><br><br>
+
         <button type="submit" class="btn">Edit</button>
         <button type="button" class="btn cancel" onclick="tutupForm()">Close</button>
     </form>
@@ -88,6 +98,7 @@
     <table>
                 <tr>
                     <th style="text-align:center; width: 3%;">No</th>
+                    <th style="text-align:center; width: 10%;">Gambar</th>
                     <th style="text-align:center; width: 10%;">Penyakit</th>
                     <th style="text-align:center; width: 35%;">Keterangan</th>
                     <th style="text-align:center; width: 30%;">Solusi</th>
@@ -102,8 +113,9 @@
                     while($data = mysqli_fetch_array($penyakit)){
                         echo"<tr>";
                         echo"<td style='text-align:center; height:30px;'>$n</td>";
+                        echo"<td style='padding:5px; text-align:center;'><img style='width:100px;height:100px;' src= css/imagePenyakit/$data[gambar] ></td>";
                         echo"<td style='padding-left:5px;'>$data[nm_penyakit]</td>";
-                        echo"<td style='padding-left:5px;'>$data[keterangan]</td>";
+                        echo"<td style='padding-left:5px; text-align:left;'>$data[keterangan]</td>";
                         echo"<td style='padding-left:5px;'>$data[solusi]</td>";
                         echo"<td style='text-align:center;'>
                         <a href='?id=$data[id_penyakit]' class='btn btn-danger btn-xs' ><i  class='fa fa-trash'></i></a>
@@ -121,7 +133,7 @@
             </table>
     </div>
     <div class="footer-2">
-        <p>Author: Dela</p>
+        <p>Author: Dela Fitria</p>
     </div>
     </body>
 </html>

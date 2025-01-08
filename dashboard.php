@@ -26,8 +26,7 @@
             <li><a href="konsultasiadmin.php"><i class="fa fa-user-md"></i> Konsultasi</a></li>
 </ul>
     <h1 class="box-judul">HALAMAN BERANDA</h1>
-    <div class="box-welcome"><h4>SELAMAT DATANG ADMIN DI SISTEM PAKAR KLASIFIKASI GIZI BALITA 
-        DENGAN METODE FUZZY DAN CASE BASED REASONING (CBR)</h4>
+    <div class="box-welcome"><h4>SELAMAT DATANG ADMIN DI SISTEM PAKAR DIAGNOSIS PENYAKIT BALITA MENGGUNAKAN METODE FUZZY DAN CBR (CASE-BASED REASONING)</h4>
     </div>
     <?php
     include "koneksi.php";

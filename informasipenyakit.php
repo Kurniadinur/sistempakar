@@ -17,8 +17,8 @@
         </ul>
         <a style="text-decoration:none" class="button-kembali" href="informasi.php"><i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp;Kembali</a>
         <div class="box-welcome">
-            <h1>INFORMASI PENYAKIT BALITA</h1>
-            <p style="font-size: 12px;">SISTEM INFORMASI PAKAR KLASIFIKASI PENYAKIT BALITA DENGAN MENGGUNAKAN METODE FUZZY DAN CBR</p>
+            <h1>INFORMASI PENYAKIT GIZI BALITA</h1>
+            <p style="font-size: 12px;">SISTEM PAKAR DIAGNOSIS PENYAKIT BALITA MENGGUNAKAN METODE FUZZY DAN CBR (CASE-BASED REASONING)</p>
         </div>
 
             
@@ -33,14 +33,14 @@ use function PHPSTORM_META\sql_injection_subst;
 
         while($data = mysqli_fetch_array($sql)){
         echo"<div class='box-tabel-informasi'> ";
-            echo " <img style='width:100px;height:100px; float:left; margin-right:10px' src= css/imagePenyakit/$data[image] alt=$data[image]>";
+            echo " <img style='width:100px;height:100px; float:left; margin-right:10px' src= css/imagePenyakit/$data[gambar] alt=$data[gambar]>";
             echo"<h3>$data[nm_penyakit]</h3>";
             echo "<p>$data[keterangan]</p>";
 
         echo'</div>';
 
         echo"<div class='box-tabel-informasi'> ";
-        echo"<h3>Solusi</h3>";
+        echo"<h3>Solusi dan Saran</h3>";
         echo "<p>$data[solusi]</p>";
         echo'</div>';
         }
@@ -50,7 +50,7 @@ use function PHPSTORM_META\sql_injection_subst;
 
         <script src="'main.js" ></script>
     <div class="footer-2">
-        <p>Author: Dela</p>
+        <p>Author: Dela Fitria</p>
     </div>
     </body>
     

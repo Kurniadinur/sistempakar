@@ -64,7 +64,7 @@
             </table>
     </div>
     <div class="footer-2">
-        <p>Author: Dela</p>
+        <p>Author: Dela Fitria</p>
     </div>
     </body>
 </html>

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2024 at 01:11 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Jun 20, 2024 at 11:30 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -59,73 +59,57 @@ CREATE TABLE `basis_kasus` (
 --
 
 INSERT INTO `basis_kasus` (`id_aturan`, `id_penyakit`, `id_gejala`, `nama_penyakit`, `nama_gejala`, `bobot`) VALUES
-(28, 1, 1, 'Defisiensi Vitamin A', 'Mata kering', 40),
-(29, 1, 3, 'Defisiensi Vitamin A', 'Kulit kering', 10),
-(30, 1, 2, 'Defisiensi Vitamin A', 'Sulit melihat di malam hari', 10),
-(31, 1, 4, 'Defisiensi Vitamin A', 'Kuku pecah-pecah', 50),
-(32, 1, 6, 'Defisiensi Vitamin A', 'Kebutaan', 80),
-(33, 1, 7, 'Defisiensi Vitamin A', 'Bintik putih di mata', 50),
-(34, 1, 9, 'Defisiensi Vitamin A', 'Infeksi', 30),
-(35, 1, 8, 'Defisiensi Vitamin A', 'Gangguan Pertumbuhan', 10),
-(36, 1, 5, 'Defisiensi Vitamin A', 'Ulkus kornea (luka pada mata)', 70),
-(37, 2, 10, 'Kekurangan Yodium', 'Benjolan di leher', 80),
-(38, 2, 11, 'Kekurangan Yodium', 'Rambut rontok', 30),
-(39, 2, 12, 'Kekurangan Yodium', 'Peningkatan berat badan tanpa penyebab yang jelas', 10),
-(40, 2, 13, 'Kekurangan Yodium', 'Tubuh terasa lelah dan lemah', 20),
-(41, 2, 14, 'Kekurangan Yodium', 'Merasa kedinginan', 10),
-(42, 2, 15, 'Kekurangan Yodium', 'Kulit menjadi kering dan pecah-pecah', 30),
-(43, 2, 16, 'Kekurangan Yodium', 'Gangguan irama jantung', 20),
-(44, 2, 17, 'Kekurangan Yodium', 'Penurunan daya ingat dan kemampuan berpikir.', 10),
-(45, 2, 17, 'Kekurangan Yodium', 'Penurunan daya ingat dan kemampuan berpikir.', 20),
-(46, 3, 18, 'Anemia', 'terlihat pucat', 10),
-(47, 3, 19, 'Anemia', 'Mudah lelah', 20),
-(48, 3, 20, 'Anemia', 'Kerap merasa pusing', 50),
-(49, 3, 21, 'Anemia', 'Napas terasa lebih berat', 20),
-(50, 3, 22, 'Anemia', 'Jantung berdetak lebih cepat', 20),
-(51, 3, 23, 'Anemia', 'Kulit menjadi kuning', 70),
-(52, 3, 24, 'Anemia', 'Tidak nafsu makan', 10),
-(53, 3, 25, 'Anemia', 'Urine berwarna gelap', 50),
-(54, 4, 26, 'Stunting', 'Tinggi badan anak lebih pendek daripada tinggi badan anak seusianya', 80),
-(55, 4, 27, 'Stunting', 'Berat badan tidak meningkat secara konsisten', 30),
-(56, 4, 28, 'Stunting', 'Tahap perkembangan yang terlambat dibandingkan anak seusianya', 50),
-(57, 4, 29, 'Stunting', 'Tidak aktif bermain', 10),
-(58, 4, 13, 'Stunting', 'Tubuh terasa lelah dan lemah', 10),
-(59, 4, 31, 'Stunting', 'Mudah terserang penyakit, terutama infeksi', 20),
 (60, 5, 32, 'Osteoporosis', 'Sakit punggung pada anak, terutama bagian bawah, atau nyeri di bagian pinggul dan kaki', 60),
 (61, 5, 33, 'Osteoporosis', 'Pincang atau sulit berjalan', 70),
 (62, 5, 34, 'Osteoporosis', 'Tulang belakang yang melengkung tidak normal (kifosis)', 80),
 (63, 5, 35, 'Osteoporosis', 'Dada cekung', 70),
-(64, 6, 13, 'Maramus', 'Tubuh terasa lelah dan lemah', 10),
-(65, 6, 36, 'Maramus', 'Suhu tubuh yang menurun', 10),
-(66, 6, 37, 'Maramus', 'Diare kronis', 50),
-(67, 6, 38, 'Maramus', 'Infeksi saluran pernapasan', 70),
-(68, 6, 39, 'Maramus', 'Gangguan emosional pada anak atau tidak menunjukkan ekspresi emosi', 20),
-(69, 6, 40, 'Maramus', 'Mudah marah', 10),
-(71, 6, 42, 'Maramus', 'Pernapasan melambat', 40),
-(72, 6, 43, 'Maramus', 'Tangan bergetar', 10),
-(73, 6, 44, 'Maramus', 'Kulit kering dan kasar', 20),
-(74, 6, 45, 'Maramus', 'Kebotakan (rambut gampang rontok)', 10),
-(75, 7, 46, 'Kwashirkor', 'Penurunan ketebalan otot', 20),
-(76, 7, 47, 'Kwashirkor', 'Perut membesar', 50),
-(77, 7, 48, 'Kwashirkor', 'Kulit berwarna kemerahan, kering, bersisik, atau terkelupas', 70),
-(78, 7, 49, 'Kwashirkor', 'Kuku rapuh', 30),
-(79, 7, 50, 'Kwashirkor', 'Rambut menjadi kering, rapuh, mudah patah, bahkan berubah warna menjadi kuning kemerahan seperti rambut jagung', 70),
-(80, 7, 51, 'Kwashirkor', 'Gangguan tumbuh kembang', 10),
-(81, 7, 52, 'Kwashirkor', 'Penyakit infeksi yang terjadi dalam jangka panjang atau sulit sembuh', 40),
-(82, 7, 13, 'Kwashirkor', 'Tubuh terasa lelah dan lemah', 10),
-(83, 7, 55, 'Kwashirkor', 'Lebih rewel dan sering menangis', 10);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `detail_penyakit`
---
-
-CREATE TABLE `detail_penyakit` (
-  `id_konsultasi` int(11) NOT NULL,
-  `id_penyakit` int(3) NOT NULL,
-  `persentase` tinyint(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+(155, 1, 28, 'Defisiensi vitamin A', 'Mata kering', 70),
+(156, 1, 37, 'Defisiensi vitamin A', 'Kulit kering', 20),
+(157, 1, 45, 'Defisiensi vitamin A', 'Sulit melihat di malam hari', 80),
+(158, 1, 26, 'Defisiensi vitamin A', 'Kebutaan', 90),
+(159, 1, 49, 'Defisiensi vitamin A', 'Bintik putih di mata', 70),
+(160, 1, 46, 'Defisiensi vitamin A', 'Infeksi', 40),
+(161, 1, 36, 'Defisiensi vitamin A', 'Gangguan Pertumbuhan', 30),
+(162, 1, 7, 'Defisiensi vitamin A', 'Ulkus kornea (luka pada mata)', 80),
+(163, 2, 14, 'Kekurangan Yodium', 'Benjolan di leher', 90),
+(164, 2, 38, 'Kekurangan Yodium', 'Rambut rontok', 30),
+(165, 2, 8, 'Kekurangan Yodium', 'Peningkatan berat badan tanpa penyebab yang jelas', 30),
+(166, 2, 29, 'Kekurangan Yodium', 'Tubuh terasa lelah dan lemah', 40),
+(167, 2, 15, 'Kekurangan Yodium', 'Merasa kedinginan', 30),
+(168, 2, 9, 'Kekurangan Yodium', 'Gangguan irama jantung', 40),
+(169, 2, 6, 'Kekurangan Yodium', 'Penurunan daya ingat dan kemampuan berpikir', 50),
+(170, 3, 27, 'Anemia', 'Terlihat pucat', 50),
+(171, 3, 13, 'Anemia', 'Mudah lelah', 60),
+(172, 3, 10, 'Anemia', 'Kerap merasa pusing', 50),
+(173, 3, 35, 'Anemia', 'Napas terasa lebih berat', 40),
+(174, 3, 20, 'Anemia', 'Jantung berdetak lebih cepat', 40),
+(175, 4, 3, 'Stunting', 'Tinggi badan anak lebih pendek daripada tinggi badan anak seusianya', 90),
+(176, 4, 16, 'Stunting', 'Berat badan tidak meningkat secara konsisten', 70),
+(177, 4, 22, 'Stunting', 'Tahap perkembangan yang terlambat dibandingkan anak seusianya', 80),
+(178, 4, 11, 'Stunting', 'Mudah terserang penyakit, terutama infeksi', 50),
+(179, 6, 42, 'Marasmus', 'Tubuh terasa lelah dan lemah', 30),
+(180, 6, 25, 'Marasmus', 'Diare kronis', 70),
+(181, 6, 1, 'Marasmus', 'Infeksi saluran pernapasan', 60),
+(182, 6, 21, 'Marasmus', 'Gangguan emosional pada anak atau tidak menunjukkan ekspresi emosi ', 40),
+(183, 6, 31, 'Marasmus', 'Pernapasan melambat', 50),
+(184, 6, 2, 'Marasmus', 'Kulit kering dan kasar', 30),
+(185, 6, 12, 'Marasmus', 'Kebotakan (rambut gampang rontok)', 30),
+(186, 7, 5, 'Kwashiorkor', 'Perut membesar', 70),
+(187, 7, 44, 'Kwashiorkor', 'Kulit berwarna kemerahan, kering, bersisik, atau terkelupas', 60),
+(188, 7, 24, 'Kwashiorkor', 'Rambut menjadi kering, rapuh, mudah patah, bahkan berubah warna menjadi kuning kemerahan seperti rambut jagung', 80),
+(189, 7, 19, 'Kwashiorkor', 'Gangguan tumbuh kembang', 50),
+(190, 7, 43, 'Kwashiorkor', 'Penyakit infeksi yang terjadi dalam jangka panjang atau sulit sembuh', 50),
+(191, 7, 29, 'Kwashiorkor', 'Tubuh terasa lelah dan lemah', 20),
+(192, 7, 4, 'Kwashiorkor', 'Lebih rewel dan sering menangis', 20),
+(193, 14, 33, 'Obesitas', 'Penumpukan lemak di tubuh, terutama di sekitar pinggang', 20),
+(194, 14, 48, 'Obesitas', 'Mudah berkeringat', 10),
+(195, 14, 17, 'Obesitas', 'Susah tidur', 10),
+(196, 14, 13, 'Obesitas', 'Mudah lelah', 10),
+(197, 14, 40, 'Obesitas', 'Bagian lipatan kulit lembap karena keringat', 30),
+(198, 14, 23, 'Obesitas', 'Nyeri di persendian atau punggung', 40),
+(199, 14, 32, 'Obesitas', 'Nyeri dada', 20),
+(200, 14, 34, 'Obesitas', 'Tekanan darah tinggi', 50),
+(201, 14, 18, 'Obesitas', 'Gula darah tinggi', 80);
 
 -- --------------------------------------------------------
 
@@ -143,57 +127,53 @@ CREATE TABLE `gejala` (
 --
 
 INSERT INTO `gejala` (`id_gejala`, `nama_gejala`) VALUES
-(1, 'Mata kering'),
-(2, 'Sulit melihat di malam hari'),
-(3, 'Kulit kering'),
-(4, 'Kuku pecah-pecah'),
-(5, 'Ulkus kornea (luka pada mata)'),
-(6, 'Kebutaan'),
-(7, 'Bintik putih di mata'),
-(8, 'Gangguan Pertumbuhan'),
-(9, 'Infeksi'),
-(10, 'Benjolan di leher'),
-(11, 'Rambut rontok'),
-(12, 'Peningkatan berat badan tanpa penyebab yang jelas'),
-(13, 'Tubuh terasa lelah dan lemah'),
-(14, 'Merasa kedinginan'),
-(15, 'Kulit menjadi kering dan pecah-pecah'),
-(16, 'Gangguan irama jantung'),
-(17, 'Penurunan daya ingat dan kemampuan berpikir.'),
-(18, 'terlihat pucat'),
-(19, 'Mudah lelah'),
-(20, 'Kerap merasa pusing'),
-(21, 'Napas terasa lebih berat'),
-(22, 'Jantung berdetak lebih cepat'),
-(23, 'Kulit menjadi kuning'),
-(24, 'Tidak nafsu makan'),
-(25, 'Urine berwarna gelap'),
-(26, 'Tinggi badan anak lebih pendek daripada tinggi badan anak seusianya'),
-(27, 'Berat badan tidak meningkat secara konsisten'),
-(28, 'Tahap perkembangan yang terlambat dibandingkan anak seusianya'),
-(29, 'Tidak aktif bermain'),
-(31, 'Mudah terserang penyakit, terutama infeksi'),
-(32, 'Sakit punggung pada anak, terutama bagian bawah, atau nyeri di bagian pinggul dan kaki'),
-(33, 'Pincang atau sulit berjalan'),
-(34, 'Tulang belakang yang melengkung tidak normal (kifosis)'),
-(35, 'Dada cekung'),
-(36, 'Suhu tubuh yang menurun'),
-(37, 'Diare kronis'),
-(38, 'Infeksi saluran pernapasan'),
-(39, 'Gangguan emosional pada anak atau tidak menunjukkan ekspresi emosi'),
-(40, 'Mudah marah'),
-(42, 'Pernapasan melambat'),
-(43, 'Tangan bergetar'),
-(44, 'Kulit kering dan kasar'),
-(45, 'Kebotakan (rambut gampang rontok)'),
-(46, 'Penurunan ketebalan otot'),
-(47, 'Perut membesar'),
-(48, 'Kulit berwarna kemerahan, kering, bersisik, atau terkelupas'),
-(49, 'Kuku rapuh'),
-(50, 'Rambut menjadi kering, rapuh, mudah patah, bahkan berubah warna menjadi kuning kemerahan seperti rambut jagung'),
-(51, 'Gangguan tumbuh kembang'),
-(52, 'Penyakit infeksi yang terjadi dalam jangka panjang atau sulit sembuh'),
-(55, 'Lebih rewel dan sering menangis');
+(1, 'Infeksi saluran pernapasan'),
+(2, 'Kulit kering dan kasar'),
+(3, 'Tinggi badan anak lebih pendek daripada tinggi badan anak seusianya'),
+(4, 'Lebih rewel dan sering menangis'),
+(5, 'Perut membesar'),
+(6, 'Penurunan daya ingat dan kemampuan berpikir'),
+(7, 'Ulkus kornea (luka pada mata)'),
+(8, 'Peningkatan berat badan tanpa penyebab yang jelas'),
+(9, 'Gangguan irama jantung'),
+(10, 'Kerap merasa pusing'),
+(11, 'Mudah terserang penyakit, terutama infeksi'),
+(12, 'Kebotakan (rambut gampang rontok)'),
+(13, 'Mudah lelah'),
+(14, 'Benjolan di leher'),
+(15, 'Merasa kedinginan'),
+(16, 'Berat badan tidak meningkat secara konsisten'),
+(17, 'Susah tidur'),
+(18, 'Gula darah tinggi'),
+(19, 'Gangguan tumbuh kembang'),
+(20, 'Jantung berdetak lebih cepat'),
+(21, 'Gangguan emosional pada anak atau tidak menunjukkan ekspresi emosi '),
+(22, 'Tahap perkembangan yang terlambat dibandingkan anak seusianya'),
+(23, 'Nyeri di persendian atau punggung'),
+(24, 'Rambut menjadi kering, rapuh, mudah patah, bahkan berubah warna menjadi kuning kemerahan seperti rambut jagung'),
+(25, 'Diare kronis'),
+(26, 'Kebutaan'),
+(27, 'Terlihat pucat'),
+(28, 'Mata kering'),
+(29, 'Tubuh terasa lelah dan lemah'),
+(31, 'Pernapasan melambat'),
+(32, 'Nyeri dada'),
+(33, 'Penumpukan lemak di tubuh, terutama di sekitar pinggang'),
+(34, 'Tekanan darah tinggi'),
+(35, 'Napas terasa lebih berat'),
+(36, 'Gangguan Pertumbuhan'),
+(37, 'Kulit kering'),
+(38, 'Rambut rontok'),
+(39, 'Tubuh terasa lelah dan lemah'),
+(40, 'Bagian lipatan kulit lembap karena keringat'),
+(42, 'Tubuh terasa lelah dan lemah'),
+(43, 'Penyakit infeksi yang terjadi dalam jangka panjang atau sulit sembuh'),
+(44, 'Kulit berwarna kemerahan, kering, bersisik, atau terkelupas'),
+(45, 'Sulit melihat di malam hari'),
+(46, 'Infeksi'),
+(47, 'Mudah lelah'),
+(48, 'Mudah berkeringat'),
+(49, 'Bintik putih di mata');
 
 -- --------------------------------------------------------
 
@@ -214,7 +194,11 @@ CREATE TABLE `konsultasi` (
 
 INSERT INTO `konsultasi` (`id_konsultasi`, `tanggal`, `diagnosa`, `persentase`) VALUES
 (4, '2011-05-26', 'DEFISIENSI VITAMIN A', 51.43),
-(7, '2024-03-22', 'DEFISIENSI VITAMIN A', 51.43);
+(305, '2024-06-06', 'DEFISIENSI VITAMIN A', 17.14),
+(306, '2024-06-06', 'DEFISIENSI VITAMIN A', 31.43),
+(308, '2024-06-14', 'DEFISIENSI VITAMIN A', 28),
+(309, '2024-06-14', 'MARASMUS', 39.47),
+(310, '2024-06-19', 'ANEMIA', 54.17);
 
 -- --------------------------------------------------------
 
@@ -224,6 +208,7 @@ INSERT INTO `konsultasi` (`id_konsultasi`, `tanggal`, `diagnosa`, `persentase`) 
 
 CREATE TABLE `penyakit` (
   `id_penyakit` int(11) NOT NULL,
+  `gambar` varchar(100) NOT NULL,
   `nm_penyakit` varchar(50) NOT NULL,
   `keterangan` text DEFAULT NULL,
   `solusi` text DEFAULT NULL
@@ -233,14 +218,14 @@ CREATE TABLE `penyakit` (
 -- Dumping data for table `penyakit`
 --
 
-INSERT INTO `penyakit` (`id_penyakit`, `nm_penyakit`, `keterangan`, `solusi`) VALUES
-(1, 'Defisiensi Vitamin A', 'Defisiensi vitamin A merupakan kondisi defisiensi mikronutrien yang sering ditemukan pada negara yang sedang berkembang, terutama pada usia anak. Pada kondisi ini dapat terjadi gangguan pada penglihatan, sistem imun, metabolisme, dan perkembangan sel.  Defisiensi vitamin A merupakan penyebab terbesar kebutaan temporer pada anak. Hal ini dikarenakan vitamin A merupakan vitamin yang bersifat larut dalam lemak, tidak dapat disintesis oleh tubuh, dan merupakan elemen penting dalam mendukung fungsi penglihatan, pertumbuhan, dan daya tahan tubuh', 'Perubahan pola makan. Perubahan pola makan jangka panjang dapat membantu memperbaiki dan mencegah kondisi avitaminosis yang memburuk. Perbanyak konsumsi makanan sehat yang mengandung gizi seimbang agar mendapatkan asupan vitamin yang cukup.\r\n\r\nPenambahan vitamin. Hal ini bisa dilakukan dengan mengonsumsi suplemen vitamin sesuai dengan resep dokter. Terkadang, dokter juga memberikan injeksi vitamin B12 apabila pasien mengalami masalah penyerapan nutrisi.\r\n\r\nObat-obatan. Dokter akan memberikan obat-obatan pada pasien yang mengalami avitaminosis akibat penyakit tertentu.\r\n\r\n'),
-(2, 'Kekurangan Yodium', 'Kekurangan asupan yodium menyebabkan penurunan produksi hormon tiroid di dalam tubuh hingga menyebabkan penyakit hipotiroid dan penyakit gondok. Hormon tiroid berperan besar dalam mengatur berbagai fungsi anggota tubuh.', 'Gangguan akibat kekurangan yodium, seperti penyakit gondok, hipotiroidisme, dan lainnya dapat dicegah dengan memasukkan garam beryodium dalam makanan serta mengonsumsi makanan yang kaya yodium, seperti telur, makanan laut (seafood), rumput laut, dan produk olahan susu'),
-(3, 'Anemia', 'Anemia merupakan kondisi medis yang terjadi ketika jumlah sel darah merah dalam tubuh lebih rendah dari jumlah normal. Sel darah merah adalah sel darah yang bertanggung jawab untuk mengirimkan oksigen dari paru-paru ke seluruh tubuh. Ketika sel darah merah dalam tubuh sedikit dan mengalami gangguan, maka tubuh tidak dapat menerima oksigen dengan cukup.', 'Memberikan Si Kecil makanan yang kaya akan vitamin dan mineral, Memberi Si Kecil ASI, atau susu formula yang kaya zat besi.\r\nPastikan asupan air Si Kecil terpenuhi\r\nAjak Si Kecil untuk aktif bergerak,\r\nMengonsumsi suplemen zat besi dan\r\nMenghentikan penggunaan obat-obatan yang memicu anemia'),
-(4, 'Stunting', 'Stunting adalah kondisi gizi kronis yang terjadi karena kekurangan asupan gizi dalam jangka waktu lama, sehingga menyebabkan pertumbuhan anak terganggu. ', 'Beberapa solusi mengatasi stunting pada anak adalah berikan ASI,\r\nperbaiki masalah menyusui,\r\nberi olahan protein hewani pada MPASI\r\n,imunisasi rutin,\r\n,Memantau tumbuh kembang anak,perilaku hidup bersih dan sehat dan\r\nmemakai jamban sehat'),
-(5, 'Osteoporosis', NULL, NULL),
-(6, 'Maramus', NULL, NULL),
-(7, 'Kwashirkor', NULL, NULL);
+INSERT INTO `penyakit` (`id_penyakit`, `gambar`, `nm_penyakit`, `keterangan`, `solusi`) VALUES
+(1, 'DefisiensiVitaminA.jpeg', 'Defisiensi vitamin A', 'Defisiensi Vitamin A adalah kondisi kekurangan vitamin A yang penting untuk penglihatan, sistem kekebalan tubuh, dan pertumbuhan sel. Gejalanya meliputi rabun senja, kerusakan kornea yang bisa menyebabkan kebutaan, meningkatnya risiko infeksi, kulit kering, dan pertumbuhan yang terhambat pada anak-anak. Penyebabnya adalah asupan makanan yang rendah vitamin A atau penyerapan vitamin A yang buruk akibat gangguan pencernaan atau penyakit hati.', 'Solusi pencegahannya adalah meningkatkan konsumsi makanan kaya vitamin A seperti hati, susu, telur, serta buah dan sayuran berwarna oranye dan hijau gelap seperti wortel, bayam, dan brokoli. Selain itu, suplementasi vitamin A bisa diberikan pada populasi berisiko tinggi.'),
+(2, 'KekuranganYodium.jpg', 'Kekurangan Yodium', 'Kekurangan Yodium adalah kondisi kekurangan yodium, mineral yang penting untuk produksi hormon tiroid. Gejalanya mencakup gondok (pembengkakan kelenjar tiroid), hipotiroidisme (kelelahan, penambahan berat badan, depresi), dan kretinisme (retardasi mental dan pertumbuhan terhambat pada anak-anak yang ibu mereka mengalami kekurangan yodium selama kehamilan). Penyebabnya adalah konsumsi makanan rendah yodium, terutama di daerah yang tanah dan airnya miskin yodium.', 'Solusi pencegahannya adalah menggunakan garam beryodium dalam masakan, serta mengonsumsi makanan laut, produk susu, dan telur yang kaya yodium.'),
+(3, 'anemia.jpg', 'Anemia', 'Anemia adalah kondisi di mana jumlah sel darah merah atau kadar hemoglobin dalam darah kurang dari normal. Gejalanya meliputi kelelahan, kelemahan, kulit pucat, sesak napas, pusing, serta tangan dan kaki yang dingin. Penyebabnya bisa berupa kekurangan zat besi, vitamin B12, atau asam folat, kehilangan darah (misalnya karena menstruasi berat atau pendarahan internal), penyakit kronis, atau gangguan sumsum tulang.', 'Solusi pencegahannya adalah mengonsumsi makanan yang kaya zat besi seperti daging merah, hati, kacang-kacangan, bayam, dan biji-bijian, serta makanan yang kaya vitamin B12 dan asam folat seperti daging, ikan, telur, susu, dan sayuran berdaun hijau. Suplementasi zat besi juga bisa diperlukan bagi individu yang berisiko tinggi.'),
+(4, 'Stunting.jpg', 'Stunting', 'Stunting adalah kondisi di mana tinggi badan anak lebih pendek dari standar yang seharusnya untuk usia mereka akibat malnutrisi kronis. Gejalanya adalah tinggi badan yang lebih pendek dari rata-rata untuk usia serta perkembangan fisik dan kognitif yang terhambat. Penyebabnya termasuk malnutrisi kronis, terutama selama 1000 hari pertama kehidupan (dari kehamilan hingga usia 2 tahun), infeksi berulang, dan kondisi lingkungan yang buruk.', 'Solusi pencegahannya adalah memastikan nutrisi yang cukup dan seimbang selama kehamilan dan masa bayi, memberikan ASI eksklusif selama 6 bulan pertama, memperkenalkan makanan pendamping ASI yang kaya nutrisi, serta memastikan kebersihan lingkungan untuk mencegah infeksi.'),
+(6, 'maramus.jpg', 'Marasmus', 'Marasmus adalah bentuk malnutrisi parah yang disebabkan oleh kekurangan kalori dan protein. Gejalanya meliputi berat badan yang sangat rendah, otot dan jaringan lemak yang sangat berkurang, wajah terlihat tua, serta kulit kering dan keriput. Penyebabnya adalah asupan makanan yang sangat rendah, terutama selama masa bayi dan anak-anak.', 'Solusi pencegahannya adalah memastikan asupan kalori dan protein yang cukup melalui pemberian makanan bergizi seperti susu, daging, telur, kacang-kacangan, dan biji-bijian, serta memberikan pendidikan gizi kepada orang tua dan pengasuh.'),
+(7, 'Kwashirkor.jpg', 'Kwashiorkor', 'Kwashiorkor adalah bentuk malnutrisi parah yang disebabkan oleh kekurangan protein, sering kali terjadi meski kalori yang dikonsumsi cukup. Gejalanya termasuk pembengkakan (edema), terutama di perut, kaki, dan tangan, rambut yang mudah dicabut dan berubah warna, kulit bersisik atau pecah-pecah, apati, dan pertumbuhan terhambat. Penyebabnya adalah diet yang sangat rendah protein, biasanya terjadi pada anak-anak yang beralih dari ASI ke makanan padat yang rendah protein.', 'Solusi pencegahannya adalah memastikan asupan protein yang cukup dengan memberikan makanan seperti susu, daging, ikan, telur, kacang-kacangan, dan biji-bijian, serta mengedukasi orang tua tentang pentingnya protein dalam diet anak.'),
+(14, 'balita-obesitas.png', 'Obesitas', 'Obesitas adalah kondisi di mana terjadi penumpukan lemak tubuh yang berlebihan, yang dapat meningkatkan risiko berbagai penyakit. Gejalanya meliputi indeks massa tubuh (BMI) yang tinggi, lingkar pinggang yang besar, sesak napas, kelelahan, masalah tidur, serta peningkatan risiko penyakit seperti diabetes tipe 2, hipertensi, penyakit jantung, dan beberapa jenis kanker. Penyebabnya adalah asupan kalori yang berlebihan dibandingkan dengan pengeluaran energi, pola makan yang buruk, kurangnya aktivitas fisik, faktor genetik, faktor psikologis, dan kondisi medis tertentu.', 'Solusi pencegahannya adalah mengadopsi pola makan sehat dan seimbang dengan porsi yang sesuai, meningkatkan aktivitas fisik secara teratur, mengurangi waktu duduk atau beraktivitas tidak aktif, serta menghindari makanan tinggi gula dan lemak jenuh.');
 
 --
 -- Indexes for dumped tables
@@ -278,25 +263,25 @@ ALTER TABLE `penyakit`
 -- AUTO_INCREMENT for table `basis_kasus`
 --
 ALTER TABLE `basis_kasus`
-  MODIFY `id_aturan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
+  MODIFY `id_aturan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202;
 
 --
 -- AUTO_INCREMENT for table `gejala`
 --
 ALTER TABLE `gejala`
-  MODIFY `id_gejala` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id_gejala` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 
 --
 -- AUTO_INCREMENT for table `konsultasi`
 --
 ALTER TABLE `konsultasi`
-  MODIFY `id_konsultasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_konsultasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=311;
 
 --
 -- AUTO_INCREMENT for table `penyakit`
 --
 ALTER TABLE `penyakit`
-  MODIFY `id_penyakit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_penyakit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

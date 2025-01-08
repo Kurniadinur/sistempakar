@@ -28,7 +28,7 @@
 
     <footer>
         <p>
-            Author: Dela</p>
+            Author: Dela Fitria</p>
     </footer>
 
 </html>
